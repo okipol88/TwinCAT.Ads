@@ -1,0 +1,30 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: TwinCAT.Ads.TypeSystem.PVoidType
+// Assembly: TwinCAT.Ads, Version=6.0.164.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3
+// MVID: E66A887E-650C-48BD-ACFF-80F7B9224E2B
+// Assembly location: C:\projects\trimet_l1\contrib\beckhoff.twincat.ads\6.0.164\lib\net6.0\TwinCAT.Ads.dll
+// XML documentation location: C:\projects\trimet_l1\contrib\beckhoff.twincat.ads\6.0.164\lib\net6.0\TwinCAT.Ads.xml
+
+using TwinCAT.Ads.Internal;
+
+
+#nullable enable
+namespace TwinCAT.Ads.TypeSystem
+{
+  /// <summary>
+  /// Class PVoidType. This class cannot be inherited.
+  /// Implements the <see cref="T:TwinCAT.Ads.TypeSystem.PointerType" />
+  /// </summary>
+  /// <seealso cref="T:TwinCAT.Ads.TypeSystem.PointerType" />
+  public sealed class PVoidType : PointerType
+  {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="T:TwinCAT.Ads.TypeSystem.PVoidType" /> class.
+    /// </summary>
+    /// <param name="entry">The entry.</param>
+    internal PVoidType(AdsDataTypeEntry entry)
+      : base(entry, "BYTE")
+    {
+    }
+  }
+}

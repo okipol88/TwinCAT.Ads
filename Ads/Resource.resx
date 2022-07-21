@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdsError_26" xml:space="preserve">
+    <value>A Tcp send error has occurred.</value>
+  </data>
+  <data name="AdsError_27" xml:space="preserve">
+    <value>Host is unreachable.</value>
+  </data>
+  <data name="AdsError_24" xml:space="preserve">
+    <value>The Ams port is invalid.</value>
+  </data>
+  <data name="AdsError_25" xml:space="preserve">
+    <value>No memory is available.</value>
+  </data>
+  <data name="AdsError_22" xml:space="preserve">
+    <value>An Ams Sync Ams error has occured.</value>
+  </data>
+  <data name="AdsError_23" xml:space="preserve">
+    <value>No Ams Sync Map exists.</value>
+  </data>
+  <data name="AdsError_20" xml:space="preserve">
+    <value>An Ams Sync Win32 error has occured .</value>
+  </data>
+  <data name="AdsError_21" xml:space="preserve">
+    <value>Sync Timeout has been reached.</value>
+  </data>
+  <data name="AdsError_15" xml:space="preserve">
+    <value>Ams netID is invalid.</value>
+  </data>
+  <data name="AdsError_14" xml:space="preserve">
+    <value>Ams length is invalid.</value>
+  </data>
+  <data name="AdsError_17" xml:space="preserve">
+    <value>Debug is not available.</value>
+  </data>
+  <data name="AdsError_16" xml:space="preserve">
+    <value>The installation level is too low.</value>
+  </data>
+  <data name="AdsError_11" xml:space="preserve">
+    <value>Ams command is unknown.</value>
+  </data>
+  <data name="AdsError_10" xml:space="preserve">
+    <value>No IO available.</value>
+  </data>
+  <data name="AdsError_13" xml:space="preserve">
+    <value>Port is not connected.</value>
+  </data>
+  <data name="AdsError_12" xml:space="preserve">
+    <value>A Win32 error has occurred.</value>
+  </data>
+  <data name="AdsError_19" xml:space="preserve">
+    <value>Port is not connected.</value>
+  </data>
+  <data name="AdsError_18" xml:space="preserve">
+    <value>Port is disabled.</value>
+  </data>
+  <data name="AdsError_1799" xml:space="preserve">
+    <value>Device is not in a ready state.</value>
+  </data>
+  <data name="AdsError_1798" xml:space="preserve">
+    <value>Parameter value(s) is invalid.</value>
+  </data>
+  <data name="AdsError_1793" xml:space="preserve">
+    <value>Service is not supported by server.</value>
+  </data>
+  <data name="AdsError_1792" xml:space="preserve">
+    <value>Device Error Class</value>
+  </data>
+  <data name="AdsError_1797" xml:space="preserve">
+    <value>Parameter size is incorrect.</value>
+  </data>
+  <data name="AdsError_1796" xml:space="preserve">
+    <value>Reading/writing is not permitted.</value>
+  </data>
+  <data name="AdsError_1795" xml:space="preserve">
+    <value>IndexOffset is invalid.</value>
+  </data>
+  <data name="AdsError_1794" xml:space="preserve">
+    <value>IndexGroup is invalid.</value>
+  </data>
+  <data name="AdsError_1282" xml:space="preserve">
+    <value>Mailbox is full.</value>
+  </data>
+  <data name="AdsError_1280" xml:space="preserve">
+    <value>No locked memory available.</value>
+  </data>
+  <data name="AdsError_1858" xml:space="preserve">
+    <value>Polling list is empty.</value>
+  </data>
+  <data name="AdsError_1859" xml:space="preserve">
+    <value>Var connection is already in use.</value>
+  </data>
+  <data name="AdsError_1856" xml:space="preserve">
+    <value>Client Error Class</value>
+  </data>
+  <data name="AdsError_1857" xml:space="preserve">
+    <value>Invalid parameter at service call.</value>
+  </data>
+  <data name="AdsError_1872" xml:space="preserve">
+    <value>Internal error in Ads-Sync has occured.</value>
+  </data>
+  <data name="AdsError_1873" xml:space="preserve">
+    <value>A hashtable overflow has occured.</value>
+  </data>
+  <data name="AdsError_1876" xml:space="preserve">
+    <value>An invalid response has been received.</value>
+  </data>
+  <data name="AdsError_1877" xml:space="preserve">
+    <value>Sync-port is locked.</value>
+  </data>
+  <data name="AdsError_1874" xml:space="preserve">
+    <value>Key could not be found in a hashtable.</value>
+  </data>
+  <data name="AdsError_1875" xml:space="preserve">
+    <value>There are no more symbols in cache.</value>
+  </data>
+  <data name="AdsError_1841" xml:space="preserve">
+    <value>License not valid for this system id type.</value>
+  </data>
+  <data name="AdsError_1840" xml:space="preserve">
+    <value>Public key of OEM unknown.</value>
+  </data>
+  <data name="AdsError_1843" xml:space="preserve">
+    <value>Function id is invalid.</value>
+  </data>
+  <data name="AdsError_1842" xml:space="preserve">
+    <value>Trial license denied.</value>
+  </data>
+  <data name="AdsError_1845" xml:space="preserve">
+    <value>Invalid alignment.</value>
+  </data>
+  <data name="AdsError_1844" xml:space="preserve">
+    <value>A parameter, an index, an iterator, ... is out of range.</value>
+  </data>
+  <data name="AdsError_1846" xml:space="preserve">
+    <value>License invalid platform level.</value>
+  </data>
+  <data name="AdsError_1818" xml:space="preserve">
+    <value>Query interface failed.</value>
+  </data>
+  <data name="AdsError_1819" xml:space="preserve">
+    <value>Wrong interface required.</value>
+  </data>
+  <data name="AdsError_1814" xml:space="preserve">
+    <value>No more notification handles available.</value>
+  </data>
+  <data name="AdsError_1815" xml:space="preserve">
+    <value>Size for watch is to big.</value>
+  </data>
+  <data name="AdsError_1816" xml:space="preserve">
+    <value>Device is not initialized.</value>
+  </data>
+  <data name="AdsError_1817" xml:space="preserve">
+    <value>Device has a timeout.</value>
+  </data>
+  <data name="AdsError_1810" xml:space="preserve">
+    <value>Server is in invalid state.</value>
+  </data>
+  <data name="AdsError_1811" xml:space="preserve">
+    <value>AdsTransMode is not supported.</value>
+  </data>
+  <data name="AdsError_1812" xml:space="preserve">
+    <value>Notification handle is invalid.</value>
+  </data>
+  <data name="AdsError_1813" xml:space="preserve">
+    <value>Notification client not registered.</value>
+  </data>
+  <data name="AdsError_1863" xml:space="preserve">
+    <value>Timeout is invalid.</value>
+  </data>
+  <data name="AdsError_1862" xml:space="preserve">
+    <value>Error in win32 subsystem.</value>
+  </data>
+  <data name="AdsError_1861" xml:space="preserve">
+    <value>Timeout has elapsed.</value>
+  </data>
+  <data name="AdsError_1860" xml:space="preserve">
+    <value>Invoke id is in use.</value>
+  </data>
+  <data name="AdsError_1865" xml:space="preserve">
+    <value>This is not a Ams-Addresse.</value>
+  </data>
+  <data name="AdsError_1864" xml:space="preserve">
+    <value>Port is not open.</value>
+  </data>
+  <data name="AdsError_1838" xml:space="preserve">
+    <value>Signature is invalid.</value>
+  </data>
+  <data name="AdsError_1839" xml:space="preserve">
+    <value>Public key certificate is invalid.</value>
+  </data>
+  <data name="AdsError_1836" xml:space="preserve">
+    <value>Exception in device specific code.</value>
+  </data>
+  <data name="AdsError_1837" xml:space="preserve">
+    <value>License file read twice.</value>
+  </data>
+  <data name="AdsError_1834" xml:space="preserve">
+    <value>License issue time in the future.</value>
+  </data>
+  <data name="AdsError_1835" xml:space="preserve">
+    <value>License time period too long.</value>
+  </data>
+  <data name="AdsError_1832" xml:space="preserve">
+    <value>License invalid system id.</value>
+  </data>
+  <data name="AdsError_1833" xml:space="preserve">
+    <value>License not time limited.</value>
+  </data>
+  <data name="AdsError_1830" xml:space="preserve">
+    <value>License exceeded.</value>
+  </data>
+  <data name="AdsError_1831" xml:space="preserve">
+    <value>License invalid.</value>
+  </data>
+  <data name="AdsError_1809" xml:space="preserve">
+    <value>Symbol version is invalid.</value>
+  </data>
+  <data name="AdsError_1808" xml:space="preserve">
+    <value>Symbol could not be found.</value>
+  </data>
+  <data name="AdsError_1805" xml:space="preserve">
+    <value>Syntax error in comand or file.</value>
+  </data>
+  <data name="AdsError_1804" xml:space="preserve">
+    <value>Could not find (files etc.).</value>
+  </data>
+  <data name="AdsError_1807" xml:space="preserve">
+    <value>Object already exists.</value>
+  </data>
+  <data name="AdsError_1806" xml:space="preserve">
+    <value>Objects do not match.</value>
+  </data>
+  <data name="AdsError_1801" xml:space="preserve">
+    <value>Context is Invalid.</value>
+  </data>
+  <data name="AdsError_1800" xml:space="preserve">
+    <value>Device is busy.</value>
+  </data>
+  <data name="AdsError_1803" xml:space="preserve">
+    <value>Parameter value(s) is invalid.</value>
+  </data>
+  <data name="AdsError_1802" xml:space="preserve">
+    <value>Out of memory.</value>
+  </data>
+  <data name="AdsError_1829" xml:space="preserve">
+    <value>License expired.</value>
+  </data>
+  <data name="AdsError_1828" xml:space="preserve">
+    <value>License not found.</value>
+  </data>
+  <data name="AdsError_1827" xml:space="preserve">
+    <value>Access denied.</value>
+  </data>
+  <data name="AdsError_1826" xml:space="preserve">
+    <value>Symbol not active -&gt; release handle and try again.</value>
+  </data>
+  <data name="AdsError_1825" xml:space="preserve">
+    <value>Invalid Array Index.</value>
+  </data>
+  <data name="AdsError_1824" xml:space="preserve">
+    <value>Signal Warning.</value>
+  </data>
+  <data name="AdsError_1823" xml:space="preserve">
+    <value>Request is aborted.</value>
+  </data>
+  <data name="AdsError_1822" xml:space="preserve">
+    <value>Request is pending.</value>
+  </data>
+  <data name="AdsError_1821" xml:space="preserve">
+    <value>Object ID is invalid.</value>
+  </data>
+  <data name="AdsError_1820" xml:space="preserve">
+    <value>Class ID is invalid.</value>
+  </data>
+  <data name="AdsError_4" xml:space="preserve">
+    <value>Error occurred while inserting into mailbox .</value>
+  </data>
+  <data name="AdsError_5" xml:space="preserve">
+    <value>Wrong HMSG has been received.</value>
+  </data>
+  <data name="AdsError_6" xml:space="preserve">
+    <value>Target port could not be found.</value>
+  </data>
+  <data name="AdsError_7" xml:space="preserve">
+    <value>Target machine could not be found.</value>
+  </data>
+  <data name="AdsError_1" xml:space="preserve">
+    <value>An internal Error has occured.</value>
+  </data>
+  <data name="AdsError_2" xml:space="preserve">
+    <value>No RTime available.</value>
+  </data>
+  <data name="AdsError_3" xml:space="preserve">
+    <value>Error occurred while allocating locked memory.</value>
+  </data>
+  <data name="AdsError_8" xml:space="preserve">
+    <value>CommandID is unknown.</value>
+  </data>
+  <data name="AdsError_9" xml:space="preserve">
+    <value>TaskID is bad.</value>
+  </data>
+  <data name="MarshalException_Message" xml:space="preserve">
+    <value>Exception occurred during marshalling/demarshalling data.</value>
+  </data>
+  <data name="NotConnected_message" xml:space="preserve">
+    <value>Client is not connected!</value>
+  </data>
+  <data name="SymbolVersionChangedRegistrationFailed_Message" xml:space="preserve">
+    <value>Couldn't register for SymbolVersion change Notifications on the connected ADS Server. Don't register for AdsClient.SymbolVersionChanged events!</value>
+  </data>
+  <data name="AdsDataTypeNotSupported_Message" xml:space="preserve">
+    <value>The specified data type is not supported!</value>
+  </data>
+  <data name="SessionNotConnected_Message1" xml:space="preserve">
+    <value>The session 'ID: {0}' (Address: {1}) is not connected!</value>
+  </data>
+  <data name="SessionNotConnected_Message2" xml:space="preserve">
+    <value>The session 'ID: {0}' (Address: {1}) is not connected. {2}</value>
+  </data>
+  <data name="AdsError_32768" xml:space="preserve">
+    <value>Client Queue is full.</value>
+  </data>
+  <data name="AdsStateChangedRegistrationFailed_Message" xml:space="preserve">
+    <value>Couldn't register for AdsState change Notifications on the connected ADS Server. Don't register for AdsClient.AdsStateChanged events!</value>
+  </data>
+  <data name="CannotReconnect_Message" xml:space="preserve">
+    <value>Target address not specified, Reconnection not possible! Use one of the Connect overloads that specify the target address!</value>
+  </data>
+  <data name="MarshalException_Message4" xml:space="preserve">
+    <value>Cannot marshal value '{0}' as DataType'{1}'!</value>
+  </data>
+  <data name="MarshalException_Message2" xml:space="preserve">
+    <value>Cannot marshal from '{0}' to '{1}'!</value>
+  </data>
+  <data name="MarshalException_Message3" xml:space="preserve">
+    <value>Cannot marshal from '{0}' to '{1}' ({2})!</value>
+  </data>
+</root>

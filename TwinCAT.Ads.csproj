@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\projects\trimet_l1\contrib\beckhoff.twincat.ads\6.0.164\lib\net6.0\TwinCAT.Ads.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{623C33E7-0549-4F8B-8A6D-F6D28102AEEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TwinCAT.Ads</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <ApplicationVersion>6.0.164.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TwinCAT</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Console" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Reactive" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Text.Encoding.CodePages" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Thread" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SymbolRpcMarshaler.cs" />
+    <Compile Include="SymbolParser.cs" />
+    <Compile Include="SessionException.cs" />
+    <Compile Include="SessionNotConnectedException.cs" />
+    <Compile Include="ClientNotConnectedException.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SessionProvider`3.cs" />
+    <Compile Include="AdsCommunicationStatistics.cs" />
+    <Compile Include="CyclesPerSecond.cs" />
+    <Compile Include="StatisticExtensions.cs" />
+    <Compile Include="SymbolLoaderSettings.cs" />
+    <Compile Include="ValueAccess\CannotAccessValueException.cs" />
+    <Compile Include="ValueAccess\ValueAccessorException.cs" />
+    <Compile Include="ValueAccess\ValueAccessor.cs" />
+    <Compile Include="ValueAccess\RpcNotificationAccessorBase.cs" />
+    <Compile Include="ValueAccess\ValueFactory.cs" />
+    <Compile Include="ValueAccess\DynamicValueAccessor.cs" />
+    <Compile Include="ValueAccess\DynamicValueFactory.cs" />
+    <Compile Include="TypeSystem\AnyArrayConverter.cs" />
+    <Compile Include="TypeSystem\DataTypeResolverExtension.cs" />
+    <Compile Include="TypeSystem\SymbolValueEncodingExtension.cs" />
+    <Compile Include="TypeSystem\SymbolicAnyTypeMarshaler.cs" />
+    <Compile Include="TypeSystem\AnyTypeMarshaler.cs" />
+    <Compile Include="TypeSystem\BitTypeConverter.cs" />
+    <Compile Include="TypeSystem\MarshallingHelperExtension.cs" />
+    <Compile Include="TypeSystem\PrimitiveTypeMarshaler.cs" />
+    <Compile Include="TypeSystem\CannotAccessVirtualSymbolException.cs" />
+    <Compile Include="TypeSystem\InsufficientAccessRightsException.cs" />
+    <Compile Include="TypeSystem\MarshalException.cs" />
+    <Compile Include="TypeSystem\DynamicSymbolsCollection.cs" />
+    <Compile Include="TypeSystem\DynamicArrayInstance.cs" />
+    <Compile Include="TypeSystem\DynamicOversamplingArrayInstance.cs" />
+    <Compile Include="TypeSystem\DynamicUnionInstance.cs" />
+    <Compile Include="TypeSystem\DynamicInterfaceInstance.cs" />
+    <Compile Include="TypeSystem\DynamicStructInstance.cs" />
+    <Compile Include="TypeSystem\DynamicAliasInstance.cs" />
+    <Compile Include="TypeSystem\DynamicStructReferenceInstance.cs" />
+    <Compile Include="TypeSystem\DynamicVirtualStructInstance.cs" />
+    <Compile Include="TypeSystem\DynamicReferenceInstance.cs" />
+    <Compile Include="TypeSystem\DynamicPointerInstance.cs" />
+    <Compile Include="TypeSystem\DynamicSymbol.cs" />
+    <Compile Include="TypeSystem\RpcMethodParameterMapper.cs" />
+    <Compile Include="TypeSystem\ArrayElementValueIterator.cs" />
+    <Compile Include="TypeSystem\DynamicValue.cs" />
+    <Compile Include="TypeSystem\DynamicReferenceValue.cs" />
+    <Compile Include="TypeSystem\DynamicPointerValue.cs" />
+    <Compile Include="TypeSystem\DynamicSymbolFactory.cs" />
+    <Compile Include="TypeSystem\IRpcMarshal.cs" />
+    <Compile Include="TypeSystem\RpcMarshaler.cs" />
+    <Compile Include="TypeSystem\Namespace.cs" />
+    <Compile Include="TypeSystem\SymbolFactoryBase.cs" />
+    <Compile Include="TypeSystem\RpcMethodParameterCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyMethodParameterCollection.cs" />
+    <Compile Include="TypeSystem\SymbolIterationMask.cs" />
+    <Compile Include="TypeSystem\SymbolFactoryServices.cs" />
+    <Compile Include="TypeSystem\SymbolFactoryValueServices.cs" />
+    <Compile Include="TypeSystem\SymbolNavigator`1.cs" />
+    <Compile Include="TypeSystem\ArrayIndexType.cs" />
+    <Compile Include="TypeSystem\DimensionCollectionConverter.cs" />
+    <Compile Include="TypeSystem\ArrayIndexConverter.cs" />
+    <Compile Include="TypeSystem\DataTypeStringParser.cs" />
+    <Compile Include="TypeSystem\Binder.cs" />
+    <Compile Include="TypeSystem\ArrayIndexIterator.cs" />
+    <Compile Include="TypeSystem\DynamicValueMarshaler.cs" />
+    <Compile Include="TypeSystem\InstanceValueMarshaler.cs" />
+    <Compile Include="TypeSystem\EnumValueFactory.cs" />
+    <Compile Include="TypeSystem\EnumTypeConverter`1.cs" />
+    <Compile Include="TypeSystem\EncodingAttributeConverter.cs" />
+    <Compile Include="TypeSystem\TypeAttributeCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyTypeAttributeCollection.cs" />
+    <Compile Include="TypeSystem\RpcMethodCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyRpcMethodCollection.cs" />
+    <Compile Include="TypeSystem\DataTypeCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyDataTypeCollection.cs" />
+    <Compile Include="TypeSystem\FluentAlignedMemberCollectionExtension.cs" />
+    <Compile Include="TypeSystem\AlignedMemberCollection.cs" />
+    <Compile Include="TypeSystem\MemberCollection.cs" />
+    <Compile Include="TypeSystem\FieldCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyFieldCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyMemberCollection.cs" />
+    <Compile Include="TypeSystem\SymbolCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlySymbolCollection.cs" />
+    <Compile Include="TypeSystem\NamespaceCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyNamespaceCollection.cs" />
+    <Compile Include="TypeSystem\EnumValue`1.cs" />
+    <Compile Include="TypeSystem\EnumValueCollection`1.cs" />
+    <Compile Include="TypeSystem\ReadOnlyEnumValueCollection`1.cs" />
+    <Compile Include="TypeSystem\EnumValueCollection.cs" />
+    <Compile Include="TypeSystem\ReadOnlyEnumValueCollection.cs" />
+    <Compile Include="TypeSystem\ArrayElementSymbolCollection.cs" />
+    <Compile Include="TypeSystem\Generic\DataTypeCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\ReadOnlyDataTypeCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\InstanceCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\ReadOnlyInstanceCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\SymbolCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\ReadOnlySymbolCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\NamespaceCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\ReadOnlyNamespaceCollection`1.cs" />
+    <Compile Include="TypeSystem\Generic\SymbolIterator`1.cs" />
+    <Compile Include="Ads\AdsClient.cs" />
+    <Compile Include="Ads\AdsClientServer.cs" />
+    <Compile Include="Ads\TransportProtocols.cs" />
+    <Compile Include="Ads\AdsClientSettings.cs" />
+    <Compile Include="Ads\TaskResultExtensions.cs" />
+    <Compile Include="Ads\AdsErrorException.cs" />
+    <Compile Include="Ads\AdsInvalidNotificationException.cs" />
+    <Compile Include="Ads\AdsSumCommandException.cs" />
+    <Compile Include="Ads\AdsErrorCodeExtensions2.cs" />
+    <Compile Include="Ads\ICommunicationInterceptor.cs" />
+    <Compile Include="Ads\ICommunicationInterceptHandler.cs" />
+    <Compile Include="Ads\CommunicationInterceptor.cs" />
+    <Compile Include="Ads\CommunicationInterceptors.cs" />
+    <Compile Include="Ads\IFailFastHandler.cs" />
+    <Compile Include="Ads\IFailFastHandlerState.cs" />
+    <Compile Include="Ads\FailFastHandlerInterceptor.cs" />
+    <Compile Include="Ads\ConnectionStateInterceptor.cs" />
+    <Compile Include="Ads\ClientNetIdResearcher.cs" />
+    <Compile Include="Ads\IAdsNotificationsBase.cs" />
+    <Compile Include="Ads\ResMan.cs" />
+    <Compile Include="Ads\AdsSession.cs" />
+    <Compile Include="Ads\ClientFactory.cs" />
+    <Compile Include="Ads\AdsConnection.cs" />
+    <Compile Include="Ads\AdsTimeoutSetter.cs" />
+    <Compile Include="Ads\FailFastHandlerResetter.cs" />
+    <Compile Include="Ads\PreventConnectionRejectedError.cs" />
+    <Compile Include="Ads\IInterceptionFactory.cs" />
+    <Compile Include="Ads\SessionSettings.cs" />
+    <Compile Include="Ads\IAdsSessionSettings.cs" />
+    <Compile Include="Ads\AdsSessionBase.cs" />
+    <Compile Include="Ads\AdsSessionProvider.cs" />
+    <Compile Include="Ads\AdsDataTypeArrayInfo.cs" />
+    <Compile Include="Ads\AdsArrayDimensionsInfo.cs" />
+    <Compile Include="Ads\ValueAccess\ValueAccessMode.cs" />
+    <Compile Include="Ads\ValueAccess\AdsConnectionRestore.cs" />
+    <Compile Include="Ads\ValueAccess\AdsValueAccessorBase.cs" />
+    <Compile Include="Ads\ValueAccess\AdsValueAccessor.cs" />
+    <Compile Include="Ads\TypeSystem\AdsSymbolServer.cs" />
+    <Compile Include="Ads\TypeSystem\TypeMembersConverter.cs" />
+    <Compile Include="Ads\TypeSystem\RpcMethodConverter.cs" />
+    <Compile Include="Ads\TypeSystem\RpcMethodParaConverter.cs" />
+    <Compile Include="Ads\TypeSystem\DimensionConverter.cs" />
+    <Compile Include="Ads\TypeSystem\AdsDataTypeStringParser.cs" />
+    <Compile Include="Ads\TypeSystem\AdsSymbolParser.cs" />
+    <Compile Include="Ads\TypeSystem\AlignmentCalculator.cs" />
+    <Compile Include="Ads\TypeSystem\SymbolFactory.cs" />
+    <Compile Include="Ads\TypeSystem\AdsNotificationCache.cs" />
+    <Compile Include="Ads\TypeSystem\SymbolLoaderFactory.cs" />
+    <Compile Include="Ads\TypeSystem\AdsSymbolProvider.cs" />
+    <Compile Include="Ads\TypeSystem\AdsSymbolLoader.cs" />
+    <Compile Include="Ads\TypeSystem\Symbol.cs" />
+    <Compile Include="Ads\TypeSystem\VirtualStructInstance.cs" />
+    <Compile Include="Ads\TypeSystem\UnionInstance.cs" />
+    <Compile Include="Ads\TypeSystem\InterfaceInstance.cs" />
+    <Compile Include="Ads\TypeSystem\StructInstance.cs" />
+    <Compile Include="Ads\TypeSystem\AliasInstance.cs" />
+    <Compile Include="Ads\TypeSystem\ReferenceInstance.cs" />
+    <Compile Include="Ads\TypeSystem\RpcStructReferenceInstance.cs" />
+    <Compile Include="Ads\TypeSystem\StringInstance.cs" />
+    <Compile Include="Ads\TypeSystem\PointerInstance.cs" />
+    <Compile Include="Ads\TypeSystem\OversamplingArrayInstance.cs" />
+    <Compile Include="Ads\TypeSystem\ArrayInstance.cs" />
+    <Compile Include="Ads\TypeSystem\IArrayInstanceVariableSize.cs" />
+    <Compile Include="Ads\TypeSystem\DimensionCollectionExtension.cs" />
+    <Compile Include="Ads\TypeSystem\ArrayTypeVariableSize.cs" />
+    <Compile Include="Ads\TypeSystem\ArrayInstanceVariableSize.cs" />
+    <Compile Include="Ads\TypeSystem\SymbolIterator.cs" />
+    <Compile Include="Ads\TypeSystem\AdsBinder.cs" />
+    <Compile Include="Ads\TypeSystem\IAdsBinder.cs" />
+    <Compile Include="Ads\TypeSystem\CategoryConverter.cs" />
+    <Compile Include="Ads\TypeSystem\BitMappingType.cs" />
+    <Compile Include="Ads\TypeSystem\PrimitiveType.cs" />
+    <Compile Include="Ads\TypeSystem\PlatformBoundType.cs" />
+    <Compile Include="Ads\TypeSystem\PlcOpenType.cs" />
+    <Compile Include="Ads\TypeSystem\FluentRpcMethodExtension.cs" />
+    <Compile Include="Ads\TypeSystem\RpcMethod.cs" />
+    <Compile Include="Ads\TypeSystem\RpcMethodParameter.cs" />
+    <Compile Include="Ads\TypeSystem\DataType.cs" />
+    <Compile Include="Ads\TypeSystem\EnumType`1.cs" />
+    <Compile Include="Ads\TypeSystem\AliasType.cs" />
+    <Compile Include="Ads\TypeSystem\StringType.cs" />
+    <Compile Include="Ads\TypeSystem\WStringType.cs" />
+    <Compile Include="Ads\TypeSystem\UnionType.cs" />
+    <Compile Include="Ads\TypeSystem\InterfaceType.cs" />
+    <Compile Include="Ads\TypeSystem\FluentStructTypeExtension.cs" />
+    <Compile Include="Ads\TypeSystem\StructType.cs" />
+    <Compile Include="Ads\TypeSystem\ReferenceType.cs" />
+    <Compile Include="Ads\TypeSystem\PointerType.cs" />
+    <Compile Include="Ads\TypeSystem\PCCHType.cs" />
+    <Compile Include="Ads\TypeSystem\PVoidType.cs" />
+    <Compile Include="Ads\TypeSystem\SubRangeTypeFactory.cs" />
+    <Compile Include="Ads\TypeSystem\SubRangeType`1.cs" />
+    <Compile Include="Ads\TypeSystem\Field.cs" />
+    <Compile Include="Ads\TypeSystem\Member.cs" />
+    <Compile Include="Ads\TypeSystem\ArrayType.cs" />
+    <Compile Include="Ads\TypeSystem\ISymbolFlagProvider.cs" />
+    <Compile Include="Ads\TypeSystem\Instance.cs" />
+    <Compile Include="Ads\SumCommand\SumCommandBase.cs" />
+    <Compile Include="Ads\SumCommand\SumCommandWrapper`1.cs" />
+    <Compile Include="Ads\SumCommand\SumRead.cs" />
+    <Compile Include="Ads\SumCommand\SumWrite.cs" />
+    <Compile Include="Ads\SumCommand\SumReadWrite.cs" />
+    <Compile Include="Ads\SumCommand\SumInstancePathCommand`2.cs" />
+    <Compile Include="Ads\SumCommand\SumSymbolCommand`1.cs" />
+    <Compile Include="Ads\SumCommand\SumSymbolReadBase.cs" />
+    <Compile Include="Ads\SumCommand\SumSymbolRead.cs" />
+    <Compile Include="Ads\SumCommand\SumAnyTypeRead.cs" />
+    <Compile Include="Ads\SumCommand\SumInstancePathAnyTypeRead.cs" />
+    <Compile Include="Ads\SumCommand\SumSymbolWrite.cs" />
+    <Compile Include="Ads\SumCommand\SumCreateHandles.cs" />
+    <Compile Include="Ads\SumCommand\SumAddNotifications.cs" />
+    <Compile Include="Ads\SumCommand\SumDeleteNotifications.cs" />
+    <Compile Include="Ads\SumCommand\SumHandleEntry.cs" />
+    <Compile Include="Ads\SumCommand\SumHandleInstancePathEntry.cs" />
+    <Compile Include="Ads\SumCommand\SumNotificationHandleEntry.cs" />
+    <Compile Include="Ads\SumCommand\ISumHandleCollection.cs" />
+    <Compile Include="Ads\SumCommand\SumHandleList.cs" />
+    <Compile Include="Ads\SumCommand\SumHandleRead.cs" />
+    <Compile Include="Ads\SumCommand\SumHandleWrite.cs" />
+    <Compile Include="Ads\SumCommand\SumReleaseHandles.cs" />
+    <Compile Include="Ads\SumCommand\SumDataEntity.cs" />
+    <Compile Include="Ads\SumCommand\IgIoSumEntity.cs" />
+    <Compile Include="Ads\SumCommand\IgIoSumReadEntity.cs" />
+    <Compile Include="Ads\SumCommand\IgIoSumWriteEntity.cs" />
+    <Compile Include="Ads\SumCommand\NotificationHandleSumEntity.cs" />
+    <Compile Include="Ads\SumCommand\HandleSumEntity.cs" />
+    <Compile Include="Ads\SumCommand\HandleSumReadAnyEntity.cs" />
+    <Compile Include="Ads\SumCommand\HandleSumWriteAnyEntity.cs" />
+    <Compile Include="Ads\SumCommand\InstancePathSumReadEntity.cs" />
+    <Compile Include="Ads\SumCommand\InstancePathSumWriteEntity.cs" />
+    <Compile Include="Ads\SumCommand\InstancePathSumEntity.cs" />
+    <Compile Include="Ads\SumCommand\NotificationHandleReleaseSumEntity.cs" />
+    <Compile Include="Ads\Internal\AsyncQueue`1.cs" />
+    <Compile Include="Ads\Internal\DisposableHandleBag`1.cs" />
+    <Compile Include="Ads\Internal\DisposableHandleBag.cs" />
+    <Compile Include="Ads\Internal\DisposableNotificationHandleBag.cs" />
+    <Compile Include="Ads\Internal\DisposableNotificationExHandleBag.cs" />
+    <Compile Include="Ads\Internal\HandleBagFactory.cs" />
+    <Compile Include="Ads\Internal\HandleTable.cs" />
+    <Compile Include="Ads\Internal\FailFastHandlerState.cs" />
+    <Compile Include="Ads\Internal\ActiveCommunicationState.cs" />
+    <Compile Include="Ads\Internal\LostCommunicationState.cs" />
+    <Compile Include="Ads\Internal\ReconnectingCommunicationState.cs" />
+    <Compile Include="Ads\Internal\IPreventRejected.cs" />
+    <Compile Include="Ads\Internal\ITcAdsConnectionHandler.cs" />
+    <Compile Include="Ads\Internal\IAdsErrorInjector.cs" />
+    <Compile Include="Ads\Internal\DataAreaPidFlags.cs" />
+    <Compile Include="Ads\Internal\NotificationQueueElement.cs" />
+    <Compile Include="Ads\Internal\INotificationProvider.cs" />
+    <Compile Include="Ads\Internal\IClientNotificationReceiver.cs" />
+    <Compile Include="Ads\Internal\ISyncNotificationReceiver.cs" />
+    <Compile Include="Ads\Internal\ISyncMessageReceiver.cs" />
+    <Compile Include="Ads\Internal\AdsNotificationExUserData.cs" />
+    <Compile Include="Ads\Internal\NotificationEntry.cs" />
+    <Compile Include="Ads\Internal\NotificationReceiverBase.cs" />
+    <Compile Include="Ads\Internal\NotificationReceiver.cs" />
+    <Compile Include="Ads\Internal\IRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\AdsRequestCompletionSourceBase`1.cs" />
+    <Compile Include="Ads\Internal\AdsRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\ReadDeviceInfoRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\ReadDeviceStateRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\ReadRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\ReadBytesRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\HandleRequestCompletionSource.cs" />
+    <Compile Include="Ads\Internal\IAdsClientFactory.cs" />
+    <Compile Include="Ads\Internal\IInterceptedClient.cs" />
+    <Compile Include="Ads\Internal\ListExtensions.cs" />
+    <Compile Include="Ads\Internal\AdsOnDemandBinder.cs" />
+    <Compile Include="Ads\Internal\SymbolInfoTable.cs" />
+    <Compile Include="Ads\Internal\SymbolUploadInfo.cs" />
+    <Compile Include="Ads\Internal\SymbolUploadFlags.cs" />
+    <Compile Include="Ads\Internal\AdsGetDynamicSymbolType.cs" />
+    <Compile Include="Ads\Internal\BinaryWriterExtension.cs" />
+    <Compile Include="Ads\Internal\BinaryReaderExtension.cs" />
+    <Compile Include="Ads\Internal\AdsSymbolEntry.cs" />
+    <Compile Include="Ads\Internal\AdsAttributeEntry.cs" />
+    <Compile Include="Ads\Internal\DataTypeFlagConverter.cs" />
+    <Compile Include="Ads\Internal\SubItemFlagConverter.cs" />
+    <Compile Include="Ads\Internal\IAdsCustomMarshal`1.cs" />
+    <Compile Include="Ads\Internal\IAdsEnumCustomMarshal`1.cs" />
+    <Compile Include="Ads\Internal\SubStructureReader`1.cs" />
+    <Compile Include="Ads\Internal\EnumSubStructureReader`1.cs" />
+    <Compile Include="Ads\Internal\AdsMethodEntry.cs" />
+    <Compile Include="Ads\Internal\AdsMethodParaInfo.cs" />
+    <Compile Include="Ads\Internal\AdsEnumInfoEntry.cs" />
+    <Compile Include="Ads\Internal\AdsFieldEntry.cs" />
+    <Compile Include="Ads\Internal\AdsDataTypeEntry.cs" />
+    <Compile Include="Ads\Internal\AdsDataTypeFactory.cs" />
+    <Compile Include="Ads\Internal\AdsDataTypeEntryExtensions.cs" />
+    <Compile Include="Ads\Internal\AdsSysServState.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ads\Resource.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
